@@ -4,7 +4,7 @@ Hi 🙃 I'm Poucy113
 **My GitHub stats** :
 ---------------------
 
-<img align="center" alt="Profile Views" src="https://komarev.com/ghpvc/?username=Wafelack">
+<img align="center" alt="Profile Views" src="https://komarev.com/ghpvc/?username=poucy113">
 
 <p align="center">
 <a href="https://github.com/anuraghazra/github-readme-stats">
