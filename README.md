@@ -10,8 +10,7 @@ Hi, I'm P.Cy.113
 <img align="center" width="750" src="https://github-readme-stats.vercel.app/api?username=poucy113&show_icons=true&theme=radical"/>
 
 <br>
-<img align="center" width="750" src="https://github-readme-stats.vercel.app/api/top-langs/?username=anuraghazra&hide_progress=true"/>
-</p>
+<img align="center" width="750" src="https://github-readme-stats.vercel.app/api/top-langs/?username=poucy113"/>
 
 <br>
 <br>
