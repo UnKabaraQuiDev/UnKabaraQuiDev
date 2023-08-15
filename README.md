@@ -12,9 +12,8 @@ Hi, I'm P.Cy.113
 <img align="center" alt="Profile Views" src="https://komarev.com/ghpvc/?username=poucy113">
 
 <br>
-<div style="display: flex; justify-content: space-between;">
-  <img height="180px" src="https://github-readme-stats.vercel.app/api?username=poucy113&show_icons=true"/>
-  <img height="180px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=poucy113&layout=compact"/>
+<img align="right" width="50%" src="https://github-readme-stats.vercel.app/api?username=poucy113&show_icons=true"/>
+<img align="left" width="50%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=poucy113&layout=compact"/>
 </div>
 
 <br>
