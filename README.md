@@ -13,8 +13,8 @@ Hi, I'm P.Cy.113
 
 <br>
 <div style="display: flex; justify-content: space-between;">
-  <img height="200px" src="https://github-readme-stats.vercel.app/api?username=poucy113&show_icons=true"/>
-  <img height="200px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=poucy113&layout=compact"/>
+  <img height="180px" src="https://github-readme-stats.vercel.app/api?username=poucy113&show_icons=true"/>
+  <img height="180px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=poucy113&layout=compact"/>
 </div>
 
 <br>
