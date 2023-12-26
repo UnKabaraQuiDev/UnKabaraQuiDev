@@ -5,6 +5,7 @@ Hi, I'm P.Cy.113
 ---------------------
 - [Packets4J](https://github.com/Poucy113/packets4j), Lightweight TCP/IP library for Java
 - [JBCodec](https://github.com/Poucy113/jbcodec), Java object de-/serialiser library
+- [Hard Surface Utils](https://github.com/Poucy113/hard_surf_utils), Blender Addon containing tools for Hard surface
 
 **My GitHub stats** :
 ---------------------
