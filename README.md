@@ -15,5 +15,5 @@ Hi, I'm @UnKabaraQuiDev
 
 <br>
 <img width="100%" src="https://github-readme-stats.vercel.app/api?username=UnKabaraQuiDev&show_icons=true"/>
-<img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=UnKabaraQuiDev&layout=compact"/>
+<img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=UnKabaraQuiDev&layout=donut"/>
 </div>
