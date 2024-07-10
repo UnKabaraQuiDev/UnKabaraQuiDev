@@ -1,12 +1,31 @@
 Hi, I'm @UnKabaraQuiDev
-===============
+===============https://github.com/UnKabaraQuiDev/StockExchangeSimulation
 
-**My current projects** :
+**Active projects** :
 ---------------------
 - [Packets4J](https://github.com/Poucy113/packets4j), Lightweight TCP/IP library for Java
 - [JBCodec](https://github.com/Poucy113/jbcodec), Java object de-/serialiser library
-- [Hard Surface Utils](https://github.com/Poucy113/hard_surf_utils), Blender Addon containing tools for Hard surface
 - [PCLib](https://github.com/Poucy113/PCLib), A collection of utility methods and classes
+- [Talking](https://github.com/UnKabaraQuiDev/talking), A TCP/IP end-to-end encrypted chatting app
+
+**Paused projects**:
+---------------------
+- [Hard Surface Utils](https://github.com/Poucy113/hard_surf_utils), Blender Addon containing tools for Hard surface
+- [MultiSkyblockUtils](https://github.com/UnKabaraQuiDev/MultiSkyblockUtils), A Minecraft 1.20.4 spigot plugin to manage multiplayer skyblock
+- [L3Lang](https://github.com/UnKabaraQuiDev/L3Lang), A low level language
+
+**Archived/Finished projects**:
+---------------------
+- [GameBoxES](https://github.com/UnKabaraQuiDev/GameBoxES), A 2D OpenGL game about microbiology for a school project
+- [letzguess_bot](https://github.com/UnKabaraQuiDev/letzguess_bot), A bot for the online [LetzGuess](https://www.letzguess.lu/) game
+- [Stock exchange simulation](https://github.com/UnKabaraQuiDev/StockExchangeSimulation), A program for the CDD jam #1
+- [Windows 2000](https://github.com/UnKabaraQuiDev/Windows2000), A program for the CDD jam #2
+
+**Archived/Abandoned projects**:
+---------------------
+- [JavaSocketAPI](https://github.com/UnKabaraQuiDev/JavaSocketAPI), Predecessor of [Packets4J](https://github.com/Poucy113/packets4j)
+- [shade_auto_utils](https://github.com/UnKabaraQuiDev/shade_auto_utils), Predecessor of [Hard Surface Utils](https://github.com/Poucy113/hard_surf_utils)
+- [Quick Java Data Base](https://github.com/UnKabaraQuiDev/quickjavadatabase)
 
 **My GitHub stats** :
 ---------------------
