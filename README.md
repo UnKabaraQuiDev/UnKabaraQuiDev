@@ -1,5 +1,5 @@
 Hi, I'm @UnKabaraQuiDev
-===============https://github.com/UnKabaraQuiDev/StockExchangeSimulation
+===============
 
 **Active projects** :
 ---------------------
