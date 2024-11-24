@@ -3,7 +3,7 @@ Hi, I'm @UnKabaraQuiDev
 
 **Active projects** :
 ---------------------
-*🌬*
+- [L3Lang](https://github.com/UnKabaraQuiDev/L3Lang), A low level language
 
 **Maintained projects** :
 ---------------------
@@ -14,7 +14,6 @@ Hi, I'm @UnKabaraQuiDev
 **Paused projects**:
 ---------------------
 - [MultiSkyblockUtils](https://github.com/UnKabaraQuiDev/MultiSkyblockUtils), A Minecraft 1.20.4 spigot plugin to manage multiplayer skyblock
-- [L3Lang](https://github.com/UnKabaraQuiDev/L3Lang), A low level language
 - [Talking](https://github.com/UnKabaraQuiDev/talking), A TCP/IP end-to-end encrypted chatting app
 
 **Archived/Finished projects**:
