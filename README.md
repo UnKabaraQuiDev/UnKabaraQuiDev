@@ -18,7 +18,7 @@ Hi, I'm @UnKabaraQuiDev
 
 **Archived/Finished projects**:
 ---------------------
-- [GameBoxES](https://github.com/UnKabaraQuiDev/GameBoxES), A 2D OpenGL game about microbiology for a school project
+- [GameBoxES](https://github.com/UnKabaraQuiDev/GameBoxES), A 2D OpenGL game about microbiology (school project)
 - [letzguess_bot](https://github.com/UnKabaraQuiDev/letzguess_bot), A bot for the online [LetzGuess](https://www.letzguess.lu/) game
 - [Stock exchange simulation](https://github.com/UnKabaraQuiDev/StockExchangeSimulation), A program for the CDD jam #1
 - [Windows 2000](https://github.com/UnKabaraQuiDev/Windows2000), A program for the CDD jam #2
