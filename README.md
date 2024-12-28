@@ -34,6 +34,10 @@ Hi, I'm @UnKabaraQuiDev
 ---------------------
 
 <br>
+
+[![trophy](https://github-profile-trophy.vercel.app/?username=UnKabaraQuiDev)](https://github.com/ryo-ma/github-profile-trophy)
+
+<br>
 <p align="center">
   <img alt="Profile Views" src="https://komarev.com/ghpvc/?username=UnKabaraQuiDev"><br>
   <img height="250" src="https://github-readme-stats.vercel.app/api?username=UnKabaraQuiDev&show_icons=true"/>
