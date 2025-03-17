@@ -3,7 +3,7 @@ Hi, I'm @UnKabaraQuiDev
 
 **Active projects** :
 ---------------------
-- [Packets4J](https://github.com/RescueRush) [A luxembourgish mini-entreprise developping a game to introduce children to the basics of 1st help](https://rescue-rush.lu/)
+- [Rescue-Rush](https://github.com/RescueRush) [A luxembourgish mini-entreprise](https://rescue-rush.lu/) developping a game to introduce children to the basics of 1st help
 
 **Maintained projects** :
 ---------------------
