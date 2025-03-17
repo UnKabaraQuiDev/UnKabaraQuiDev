@@ -3,17 +3,22 @@ Hi, I'm @UnKabaraQuiDev
 
 **Active projects** :
 ---------------------
-- [L3Lang](https://github.com/UnKabaraQuiDev/L3Lang), A low level language
+- [Packets4J](https://github.com/RescueRush) [A luxembourgish mini-entreprise developping a game to introduce children to the basics of 1st help](https://rescue-rush.lu/)
 
 **Maintained projects** :
 ---------------------
 - [Packets4J](https://github.com/Poucy113/packets4j), Lightweight TCP/IP library for Java
 - [JBCodec](https://github.com/Poucy113/jbcodec), Java object de-/serialiser library
 - [PCLib](https://github.com/Poucy113/PCLib), A collection of utility methods and classes
+<br>
+- [LU 2CI SCIPR](https://github.com/UnKabaraQuiDev/lu_2ci_scipr/), Luxembourg's 2CI class material
+- [LU 3CI SCIPR](https://github.com/UnKabaraQuiDev/lu_3ci_scipr/), Luxembourg's 3CI class material
 
 **Paused projects**:
 ---------------------
+- [L3Lang](https://github.com/UnKabaraQuiDev/L3Lang), A low level language
 - [MultiSkyblockUtils](https://github.com/UnKabaraQuiDev/MultiSkyblockUtils), A Minecraft 1.20.4 spigot plugin to manage multiplayer skyblock
+- [MultiSkyblockUtils](https://github.com/UnKabaraQuiDev/extended-generators), A Minecraft 1.21.4 spigot plugin, adds /home commands and material generators
 - [Talking](https://github.com/UnKabaraQuiDev/talking), A TCP/IP end-to-end encrypted chatting app
 
 **Archived/Finished projects**:
