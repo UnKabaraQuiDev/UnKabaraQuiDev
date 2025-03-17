@@ -10,7 +10,6 @@ Hi, I'm @UnKabaraQuiDev
 - [Packets4J](https://github.com/Poucy113/packets4j), Lightweight TCP/IP library for Java
 - [JBCodec](https://github.com/Poucy113/jbcodec), Java object de-/serialiser library
 - [PCLib](https://github.com/Poucy113/PCLib), A collection of utility methods and classes
-<br>
 - [LU 2CI SCIPR](https://github.com/UnKabaraQuiDev/lu_2ci_scipr/), Luxembourg's 2CI class material
 - [LU 3CI SCIPR](https://github.com/UnKabaraQuiDev/lu_3ci_scipr/), Luxembourg's 3CI class material
 
