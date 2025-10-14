@@ -23,6 +23,7 @@ Hi, I'm @UnKabaraQuiDev
 
 **Archived/Finished projects**:
 ---------------------
+- [ESP32 Ambient Sensors](https://github.com/UnKabaraQuiDev/esp32s3-ambient-sensors), Remote sensors using an ESP32 and an MQTT server, with a Java Frontend
 - [GameBoxES](https://github.com/UnKabaraQuiDev/GameBoxES), A 2D OpenGL game about microbiology (school project)
 - [letzguess_bot](https://github.com/UnKabaraQuiDev/letzguess_bot), A bot for the online [LetzGuess](https://www.letzguess.lu/) game
 - [Stock exchange simulation](https://github.com/UnKabaraQuiDev/StockExchangeSimulation), A program for the CDD jam #1
