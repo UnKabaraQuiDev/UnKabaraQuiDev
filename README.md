@@ -3,7 +3,7 @@ Hi, I'm @UnKabaraQuiDev
 
 **Active projects** :
 ---------------------
-- [Rescue-Rush](https://github.com/RescueRush) [A luxembourgish mini-entreprise](https://rescue-rush.lu/) developping a game to introduce children to the basics of 1st help
+- [Rescue-Rush](https://github.com/RescueRush), [A luxembourgish mini-entreprise](https://rescue-rush.lu/) developping a game to introduce children to the basics of 1st help
 
 **Maintained projects** :
 ---------------------
@@ -16,10 +16,9 @@ Hi, I'm @UnKabaraQuiDev
 
 **Paused projects**:
 ---------------------
-- [L3Lang](https://github.com/UnKabaraQuiDev/L3Lang), A low level language
+- [L3Lang](https://github.com/UnKabaraQuiDev/L3Lang), A low level language compiled to x86_64 assembly
 - [MultiSkyblockUtils](https://github.com/UnKabaraQuiDev/MultiSkyblockUtils), A Minecraft 1.20.4 spigot plugin to manage multiplayer skyblock
-- [MultiSkyblockUtils](https://github.com/UnKabaraQuiDev/extended-generators), A Minecraft 1.21.4 spigot plugin, adds /home commands and material generators
-- [Talking](https://github.com/UnKabaraQuiDev/talking), A TCP/IP end-to-end encrypted chatting app
+- [Extended Generators](https://github.com/UnKabaraQuiDev/extended-generators), A Minecraft 1.21.4 spigot plugin, adds /home commands and material generators
 
 **Archived/Finished projects**:
 ---------------------
@@ -35,10 +34,10 @@ Hi, I'm @UnKabaraQuiDev
 - [shade_auto_utils](https://github.com/UnKabaraQuiDev/shade_auto_utils), Predecessor of [Hard Surface Utils](https://github.com/Poucy113/hard_surf_utils)
 - [Quick Java Data Base](https://github.com/UnKabaraQuiDev/quickjavadatabase)
 - [Hard Surface Utils](https://github.com/Poucy113/hard_surf_utils), Blender Addon containing tools for Hard surface
+- [Talking](https://github.com/UnKabaraQuiDev/talking), A TCP/IP end-to-end encrypted chatting app
 
 **My GitHub stats** :
 ---------------------
-
 <br>
 
 [![trophy](https://github-profile-trophy.vercel.app/?username=UnKabaraQuiDev)](https://github.com/ryo-ma/github-profile-trophy)
