@@ -3,7 +3,7 @@ Hi, I'm @UnKabaraQuiDev
 
 **Active projects** :
 ---------------------
-- [Plant Game](https://github.com/UnKabaraQuiDev/plant-game): [Satisplantory on Steam](https://store.steampowered.com/app/4424580/Satisplantory/): A game about plants
+- [Plant Game](https://github.com/UnKabaraQuiDev/plant-game): [Satisplantory on Steam](https://store.steampowered.com/app/4424580/Satisplantory/), A game about plants
 
 **Maintained projects** :
 ---------------------
