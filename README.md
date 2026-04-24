@@ -3,7 +3,7 @@ Hi, I'm @UnKabaraQuiDev
 
 **Active projects** :
 ---------------------
-- [Plant Game](https://github.com/UnKabaraQuiDev/plant-game): [Satisplantory on Steam](https://store.steampowered.com/app/4424580/Satisplantory/), A game about plants
+- [Modelizer Next](http://moderlizer.kbra.lu/): A modern database modelizing tool
 
 **Maintained projects** :
 ---------------------
@@ -13,7 +13,7 @@ Hi, I'm @UnKabaraQuiDev
 
 **Paused projects**:
 ---------------------
-- _none_
+- [Plant Game](https://github.com/UnKabaraQuiDev/plant-game): [Satisplantory on Steam](https://store.steampowered.com/app/4424580/Satisplantory/), A game about plants
 
 **Archived/Finished projects**:
 ---------------------
