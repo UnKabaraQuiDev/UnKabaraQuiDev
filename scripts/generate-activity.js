@@ -34,10 +34,10 @@ function extractRepos(html) {
       .toLowerCase()
       .replace(/\s+/g, "-");
 
-    // 🔥 THIS is the key change
     const svg = $(el)
       .find(".flex-self-end svg")
       .first();
+      console.log(svg);
 
     if (!name || svg.length === 0) return;
 
