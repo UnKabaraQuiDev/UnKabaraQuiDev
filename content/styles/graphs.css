@@ -1,0 +1,56 @@
+:root {
+  --activity-graph-color: #2563eb;
+  --activity-graph-opacity-bg: 0.16;
+}
+
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.activity-graph {
+  color: var(--activity-graph-color);
+  pointer-events: none;
+}
+
+.activity-graph svg {
+  display: block;
+  width: 155px;
+  height: 30px;
+}
+
+.has-side-activity-graph {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: center;
+}
+
+.has-side-activity-graph h3,
+.has-side-activity-graph p {
+  grid-column: 1;
+}
+
+.has-side-activity-graph .activity-graph {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+
+.has-bg-activity-graph .activity-graph {
+  position: absolute;
+  right: 0.75rem;
+  bottom: 0.75rem;
+  opacity: var(--activity-graph-opacity-bg);
+  z-index: 0;
+}
+
+.has-bg-activity-graph h3,
+.has-bg-activity-graph p {
+  position: relative;
+  z-index: 1;
+}
+
+.activity-graph-missing {
+  font-size: 1.4rem;
+  opacity: 0.35;
+}
