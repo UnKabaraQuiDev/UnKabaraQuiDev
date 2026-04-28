@@ -67,6 +67,7 @@ function saveSvg(name, svg) {
 
 async function main() {
   const html = await fetchHTML();
+  console.log(html);
   const repos = extractRepos(html);
 
   for (const repo of repos) {
