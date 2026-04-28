@@ -2,8 +2,8 @@ import fs from "fs";
 import path from "path";
 import { load } from "cheerio";
 
-const INDEX_FILE = "../docs/index.html";
-const OUT_DIR = "../docs/assets/activity";
+const INDEX_FILE = "docs/index.html";
+const OUT_DIR = "docs/assets/activity";
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
 
