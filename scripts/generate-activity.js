@@ -34,7 +34,10 @@ function extractRepos(html) {
       .toLowerCase()
       .replace(/\s+/g, "-");
 
-    const svg = $(el).find("svg").last(); // sparkline SVG is the last one
+    // 🔥 THIS is the key change
+    const svg = $(el)
+      .find(".flex-self-end svg")
+      .first();
 
     if (!name || svg.length === 0) return;
 
