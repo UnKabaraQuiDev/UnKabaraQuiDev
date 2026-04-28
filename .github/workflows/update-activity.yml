@@ -18,6 +18,8 @@ jobs:
         with:
           ref: pages
 
+      - run: npm install cheerio
+
       - name: Generate activity graphs
         run: node scripts/generate-activity.js
         env:
