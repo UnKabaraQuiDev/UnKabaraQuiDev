@@ -21,7 +21,7 @@ jobs:
       - run: npm install cheerio
 
       - name: Generate activity graphs
-        run: node scripts/generate-activity.js
+        run: node node/generate-activity.js
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
