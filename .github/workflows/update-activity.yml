@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          branch: pages
+          ref: pages
 
       - name: Generate activity graphs
         run: node scripts/generate-activity.js
