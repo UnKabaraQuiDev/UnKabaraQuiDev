@@ -1,113 +1,73 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
+import path from "path";
+import { load } from "cheerio";
 
-const repos = [
-  ["modelizer-next", "UnKabaraQuiDev", "Modelizer-Next"],
-  ["pclib", "UnKabaraQuiDev", "PCLib"],
-  ["lu-1ci-scipr", "UnKabaraQuiDev", "lu_1ci_scipr"],
-  ["plant-game", "UnKabaraQuiDev", "plant-game"],
-  ["standalone-gameengine", "UnKabaraQuiDev", "StandaloneGameEngine"],
-  ["lu-2ci-scipr", "UnKabaraQuiDev", "lu_2ci_scipr"],
-  ["lu-3ci-scipr", "UnKabaraQuiDev", "lu_3ci_scipr"],
-  ["rescue-rush", "RescueRush", "RescueRush"],
-  ["esp32-ambient-sensors", "UnKabaraQuiDev", "esp32s3-ambient-sensors"],
-  ["gameboxes", "UnKabaraQuiDev", "GameBoxES"],
-  ["letzguess-bot", "UnKabaraQuiDev", "letzguess_bot"],
-  ["stock-exchange-simulation", "UnKabaraQuiDev", "StockExchangeSimulation"],
-  ["windows-2000", "UnKabaraQuiDev", "Windows2000"],
-  ["l3lang", "UnKabaraQuiDev", "L3Lang"],
-  ["packets4j", "UnKabaraQuiDev", "packets4j"],
-  ["jbcodec", "UnKabaraQuiDev", "jbcodec"],
-  ["multiskyblockutils", "UnKabaraQuiDev", "MultiSkyblockUtils"],
-  ["extended-generators", "UnKabaraQuiDev", "extended-generators"],
-  ["hard-surface-utils", "UnKabaraQuiDev", "hard_surf_utils"],
-  ["shade-auto-utils", "UnKabaraQuiDev", "shade_auto_utils"],
-  ["talking", "UnKabaraQuiDev", "talking"],
-  ["javasocketapi", "UnKabaraQuiDev", "JavaSocketAPI"],
-  ["quick-java-database", "UnKabaraQuiDev", "quickjavadatabase"]
-];
+const USER = "UnKabaraQuiDev";
+const URL = `https://github.com/${USER}?tab=repositories`;
+const OUT_DIR = "assets/activity";
 
-const token = process.env.GITHUB_TOKEN;
-const outDir = path.join("assets", "activity");
+fs.mkdirSync(OUT_DIR, { recursive: true });
 
-fs.mkdirSync(outDir, { recursive: true });
+async function fetchHTML() {
+  const res = await fetch(URL, {
+    headers: {
+      "User-Agent": "Mozilla/5.0"
+    }
+  });
 
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+  if (!res.ok) {
+    throw new Error(`Failed to fetch GitHub page: ${res.status}`);
+  }
 
-async function getActivity(owner, repo) {
-  const url = `https://api.github.com/repos/${owner}/${repo}/stats/commit_activity`;
+  return await res.text();
+}
 
-  for (let attempt = 1; attempt <= 8; attempt++) {
-    const res = await fetch(url, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-        Accept: "application/vnd.github+json",
-        "X-GitHub-Api-Version": "2026-03-10"
-      }
+function extractRepos(html) {
+  const $ = load(html);
+  const repos = [];
+
+  $("li[itemprop='owns']").each((_, el) => {
+    const name = $(el)
+      .find("h3 a")
+      .text()
+      .trim()
+      .toLowerCase()
+      .replace(/\s+/g, "-");
+
+    const svg = $(el).find("svg").last(); // sparkline SVG is the last one
+
+    if (!name || svg.length === 0) return;
+
+    repos.push({
+      name,
+      svg: $.html(svg)
     });
+  });
 
-    if (res.status === 200) {
-      return await res.json();
-    }
-
-    if (res.status === 202) {
-      console.log(`${owner}/${repo}: stats not ready, retry ${attempt}/8`);
-      await sleep(15000);
-      continue;
-    }
-
-    console.log(`${owner}/${repo}: GitHub returned ${res.status}`);
-    return [];
-  }
-
-  return [];
+  return repos;
 }
 
-function makeEmptySvg() {
-  return `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 44" role="img">
-  <title>No GitHub activity data available</title>
-  <rect x="0" y="0" width="208" height="44" rx="6" fill="#eef3f8"/>
-  <text x="104" y="26" text-anchor="middle" font-family="Arial, sans-serif" font-size="11" fill="#667085">
-    No activity data
-  </text>
-</svg>`.trim();
+function cleanSvg(svg) {
+  // remove inline styles that depend on GitHub CSS variables
+  return svg
+    .replace(/var\([^)]+\)/g, "#8cc665") // fallback green
+    .replace(/width="[^"]+"/, 'width="155"')
+    .replace(/height="[^"]+"/, 'height="30"');
 }
 
-function makeSvg(data) {
-  const weeks = data.slice(-26);
+function saveSvg(name, svg) {
+  const file = path.join(OUT_DIR, `${name}.svg`);
 
-  if (!weeks.length) {
-    return makeEmptySvg();
-  }
-
-  const max = Math.max(...weeks.map(week => week.total), 1);
-
-  const bars = weeks.map((week, i) => {
-    const height = week.total === 0 ? 2 : Math.max((week.total / max) * 36, 3);
-    const x = i * 8;
-    const y = 40 - height;
-
-    return `<rect x="${x}" y="${y}" width="5" height="${height}" rx="1" fill="#2563eb" />`;
-  }).join("");
-
-  return `
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 208 44" role="img">
-  <title>GitHub activity over the last 26 weeks</title>
-  <rect x="0" y="0" width="208" height="44" rx="6" fill="#eef3f8"/>
-  <g>${bars}</g>
-</svg>`.trim();
+  fs.writeFileSync(file, cleanSvg(svg));
+  console.log(`Saved ${file}`);
 }
 
 async function main() {
-  for (const [fileName, owner, repo] of repos) {
-    const data = await getActivity(owner, repo);
-    const svg = makeSvg(Array.isArray(data) ? data : []);
+  const html = await fetchHTML();
+  const repos = extractRepos(html);
 
-    fs.writeFileSync(
-      path.join(outDir, `${fileName}.svg`),
-      svg
-    );
+  for (const repo of repos) {
+    saveSvg(repo.name, repo.svg);
   }
 }
 
