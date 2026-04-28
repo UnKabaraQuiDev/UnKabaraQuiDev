@@ -26,10 +26,18 @@ function getReposFromIndex() {
 }
 
 function cleanSvg(svg) {
-  return svg
-//    .replace(/var\([^)]+\)/g, "#8cc665")
-    .replace(/width="[^"]+"/, 'width="155"')
-    .replace(/height="[^"]+"/, 'height="30"');
+  const match = svg.match(/<polyline[^>]+>/);
+
+  if (!match) return "";
+
+  return `<svg viewBox="0 0 155 30" xmlns="http://www.w3.org/2000/svg">
+  ${match[0]
+    .replace(/fill="[^"]*"/g, 'fill="none"')
+    .replace(/stroke="[^"]*"/g, 'stroke="white"')
+    .replace(/stroke-width="[^"]*"/g, 'stroke-width="2"')
+    .replace(/>$/, " />")
+    .trim()}
+</svg>`;
 }
 
 async function fetchSvg(owner, repo) {
