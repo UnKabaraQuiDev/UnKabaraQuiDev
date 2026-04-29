@@ -85,3 +85,20 @@ a:hover { color: #0f3d82; }
 }
 
 .footer-content p { margin: 0; }
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.header-text {
+    max-width: 720px;
+}
+
+.header-icon {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+}
