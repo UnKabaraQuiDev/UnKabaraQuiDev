@@ -9,14 +9,19 @@ Hi, I'm @UnKabaraQuiDev
 ---------------------
 - [PCLib](https://github.com/Poucy113/PCLib), A collection of utility methods and classes
 - [LU 1CI SCIPR](https://github.com/UnKabaraQuiDev/lu_1ci_scipr/), Luxembourg's 1CI class material
-- [Standalone GameEngine](https://github.com/UnKabaraQuiDev/StandaloneGameEngine), A Standalone game engine written in java using OpenGL
 
 **Paused projects**:
 ---------------------
 - [Plant Game](https://github.com/UnKabaraQuiDev/plant-game): [Satisplantory on Steam](https://store.steampowered.com/app/4424580/Satisplantory/), A game about plants
+- [Standalone GameEngine](https://github.com/UnKabaraQuiDev/StandaloneGameEngine), A Standalone game engine written in java using OpenGL
+- [steam-deploy](https://github.com/UnKabaraQuiDev/steam-deploy), A maven plugin to automate deploying artifacts to Steamworks
 
 **Archived/Finished projects**:
 ---------------------
+- [Shared Timetable](https://github.com/UnKabaraQuiDev/shared-timetable), A timetable application, like those used for train schedules. Written in Java and Spring, combines multiple websocket-synchronized clients running Swing applications with a Server running a Discord bot for easy administration.
+- [Plant Game Bad Apple](https://github.com/UnKabaraQuiDev/plant-game-bad-apple), Bad apple running on [Standalone GameEngine](https://github.com/UnKabaraQuiDev/StandaloneGameEngine) using some [Plant Game](https://github.com/UnKabaraQuiDev/plant-game) features
+- [Restopolis Bots](https://github.com/UnKabaraQuiDev/restopolis-bots), Backend that scrapes [restopolis.lu](https://restopolis.lu/)'s daily meals and sends notifications over Discord or WhatsApp
+- [Pendulum NN](https://github.com/UnKabaraQuiDev/pendulum-nn), A neural network that tries to balance a pendulum on a cart. Written in Java and running on OpenGL Compute
 - [LU 2CI SCIPR](https://github.com/UnKabaraQuiDev/lu_2ci_scipr/), Luxembourg's 2CI class material
 - [LU 3CI SCIPR](https://github.com/UnKabaraQuiDev/lu_3ci_scipr/), Luxembourg's 3CI class material
 - [Rescue-Rush](https://github.com/RescueRush), [A luxembourgish mini-entreprise](https://rescue-rush.lu/) developping a game to introduce children to the basics of 1st help
