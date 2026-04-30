@@ -102,3 +102,9 @@ a:hover { color: #0f3d82; }
     height: auto;
     flex-shrink: 0;
 }
+
+@media (max-width: 795px) {
+    .header-icon {
+        display: none;
+    }
+}
