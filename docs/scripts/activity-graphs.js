@@ -4,14 +4,14 @@ function slug(value) {
   return value
     .trim()
     .toLowerCase()
-    .replace(/[_\s]+/g, "-")
-    .replace(/[^a-z0-9-]/g, "");
+    .replace(/[\s]+/g, "-")
+    .replace(/[^a-z0-9-_]/g, "");
 }
 
 function updateGraphMode(card) {
   const width = card.offsetWidth;
 
-    console.log(`size: ${width}`, card)
+  console.log(`size: ${width}`, card)
   if (width > 1000) {
     card.classList.add("graph-full");
   } else {
@@ -33,7 +33,7 @@ function addActivityGraph(card) {
   img.alt = "";
   img.loading = "lazy";
   img.setAttribute("aria-hidden", "true");
-  console.log(`${owner} ${repo}`);
+  console.log(`${owner} ${repo} ${slug(owner)} ${slug(repo)}`);
   img.onerror = () => {
     img.remove();
   };
