@@ -3,7 +3,7 @@ Hi, I'm @UnKabaraQuiDev
 
 **Active projects** :
 ---------------------
-- [Modelizer Next](http://moderlizer.kbra.lu/), A modern database modelizing tool
+- [Modelizer Next](http://modelizer.kbra.lu/), A modern database modelizing tool
 
 **Maintained projects** :
 ---------------------
