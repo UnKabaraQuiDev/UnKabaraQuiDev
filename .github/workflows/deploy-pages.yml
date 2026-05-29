@@ -1,0 +1,40 @@
+name: Deploy Pages
+
+on:
+  workflow_dispatch: 
+  push:
+    branches:
+      - pages
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Deploy via SSH
+        uses: appleboy/ssh-action@v1.2.0
+        with:
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.USERNAME }}
+          key: ${{ secrets.SSH_KEY }}
+          port: ${{ secrets.PORT }}
+          script: |
+            set -e
+
+            mkdir -p /var/www
+            cd /var/www
+
+            if [ ! -d "UnKabaraQuiDev/.git" ]; then
+              rm -rf UnKabaraQuiDev
+
+              git clone \
+                --branch pages \
+                https://${{ secrets.GH_PAT }}@github.com/UnKabaraQuiDev/UnKabaraQuiDev.git \
+                UnKabaraQuiDev
+            fi
+
+            cd /var/www/UnKabaraQuiDev
+
+            git fetch origin
+            git checkout pages
+            git reset --hard origin/pages
