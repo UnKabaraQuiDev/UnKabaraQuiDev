@@ -1,7 +1,10 @@
 name: Deploy Pages
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Nightly", "Release"]
+    types: [completed]
   push:
     branches:
       - pages
@@ -9,32 +12,37 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event_name == 'push' ||
+      github.event.workflow_run.conclusion == 'success'
 
     steps:
       - name: Deploy via SSH
         uses: appleboy/ssh-action@v1.2.0
         with:
-          host: ${{ secrets.HOST }}
-          username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          port: ${{ secrets.PORT }}
+          host: ${{ secrets.PAGES_HOST }}
+          username: ${{ secrets.PAGES_USERNAME }}
+          key: ${{ secrets.PAGES_SSH_KEY }}
+          port: ${{ secrets.PAGES_PORT }}
           script: |
             set -e
 
             mkdir -p /var/www
             cd /var/www
 
-            if [ ! -d "UnKabaraQuiDev/.git" ]; then
-              rm -rf UnKabaraQuiDev
+            git config --global --add safe.directory /var/www/kbra.lu
 
+            if [ ! -d "kbra.lu/.git" ]; then
+              rm -rf kbra.lu
               git clone \
                 --branch pages \
                 https://${{ secrets.GH_PAT }}@github.com/UnKabaraQuiDev/UnKabaraQuiDev.git \
-                UnKabaraQuiDev
+                kbra.lu
             fi
 
-            cd /var/www/UnKabaraQuiDev
+            cd /var/www/kbra.lu
 
-            git fetch origin
+            git fetch origin pages
             git checkout pages
             git reset --hard origin/pages
