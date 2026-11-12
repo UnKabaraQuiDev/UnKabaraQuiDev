@@ -9,6 +9,7 @@ Hi, I'm @UnKabaraQuiDev
 ---------------------
 - [PCLib](https://github.com/Poucy113/PCLib), A collection of utility methods and classes
 - [Modelizer Next](http://modelizer.kbra.lu/), A modern database modelizing tool
+- [CodeQL Eclipse Plugin](https://github.com/UnKabaraQuiDev/codeql-eclipse-plugin), Integrate CodeQL warnings directly into Eclipse IDE
 
 **Paused projects**:
 ---------------------
